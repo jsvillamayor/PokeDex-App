@@ -7,25 +7,28 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="box1"> Picture form database</div>
+  <div id="box1"> {{picture}} </div>
   <div id="box2">
-    <label for="name">Name:  </label> <label for="name">this.name</label> <br>
-    <label for="hp">HP:  </label> <label for="hp">this.hp</label> <br>
-    <label for="attack">Attack:  </label> <label for="attack">this.attack</label><br>
-    <label for="defend">Defend:  </label> <label for="defend">this.defend</label><br>
+    <label for="name">Name:  </label> <label for="name">{{name}}</label> <br>
+    <label for="hp">HP:  </label> <label for="hp">{{hp}}</label> <br>
+    <label for="attack">Attack:  </label> <label for="attack">{{attack}}</label><br>
+    <label for="defend">Defend:  </label> <label for="defend">{{defend}}</label><br>
   </div>
   <div id="box3">
-    <label for="plist"> Select a Pokemon</label>
-    <select id="PokeListID"  >  
+  
+  <label for="plist"> Select a Pokemon</label>
+
+    <select #selectID id="PokeListID" (change)="Modo($any($event.target).value)" >  
     <optgroup label="PokeList">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>   
-      <option value="5">5</option>    
+      <option value=1>1</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>   
+      <option value=5>5</option>    
     </optgroup>
     </select>
-
+   
+ 
   </div>
 </body>
 </html>
