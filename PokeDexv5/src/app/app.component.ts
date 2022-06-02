@@ -16,23 +16,14 @@ import {HttpErrorResponse} from "@angular/common/http";
 
 
 export class AppComponent implements OnInit{
-  private pokemons: pokemon[]=[];
 
-  constructor(private pokemonSevice: PokemonService) {
+
+  constructor() {
   }
   ngOnInit() {
-    this.getPokemons();
+
   }
 
-  public getPokemons():void{
-    this.pokemonSevice.getPokemons().subscribe(
-      (response: pokemon[]) => {
-        this.pokemons=response;
-        console.log(this.pokemons);
-
-      }
-    );
-  }
 
 }
 
