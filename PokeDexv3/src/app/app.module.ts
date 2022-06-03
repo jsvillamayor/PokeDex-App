@@ -7,6 +7,8 @@ import { LabelComponent } from './components/label/label.component';
 import { SelectorComponent } from './components/selector/selector.component';
 import { InputComponent } from './components/input/input.component';
 import { ButtonComponent } from './components/button/button.component';
+import {HttpClientModule} from "@angular/common/http";
+import { PokemonComponent } from './components/pokemon/pokemon.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ButtonComponent } from './components/button/button.component';
     LabelComponent,
     SelectorComponent,
     InputComponent,
-    ButtonComponent
+    ButtonComponent,
+    PokemonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

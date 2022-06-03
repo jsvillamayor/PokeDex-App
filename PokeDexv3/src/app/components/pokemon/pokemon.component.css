@@ -1,0 +1,16 @@
+.box1{
+  margin-left: 300px;
+  margin-right: 600px;
+  margin-top:50px;
+  margin-bottom:50px;
+  border: 2px solid;
+  border-color: lightslategray;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+lable{
+ width: 66px;
+}

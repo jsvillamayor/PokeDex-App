@@ -6,23 +6,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
-  <div id="box1"> </div>
-  <div id="box2">
-    <app-label></app-label>
-    <app-label></app-label>
-    <app-label></app-label>
-    <app-label></app-label>
-    
+<body ng-app="myModule">
+
+<div class="box6">List of Pokemon Cards</div>
+<!--
+<div >
+  Search: <input type="text" placeholder="Search Pokemon" ng-model="searchText"/>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>HP</th>
+        <th>Attack</th>
+        <th>Defend</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="pp in pokemons2">
+        <td>{{pp.Name}}</td>
+        <td>{{pp.HP}}</td>
+        <td>{{pp.Attack}}</td>
+        <td>{{pp.Defend}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+-->
+
+
+ <div *ngFor="let o of pokemons2" class="box1"><img class="image1" src="{{o.Picture}}" alt="Picachu">
+   <div class="box4">
+     <label>  </label>{{o.Name}}
+     <label>HP:</label>{{o.HP}}
+     <label>Attack:</label>{{o.Attack}}
+     <label>Defend:</label>{{o.Defend}}
+   </div>
+
+</div>
+<div *ngIf="p" class="box5"><img class="image1" src="{{p.Picture}}" alt="{{p.Picachu}}">
+  <div class="box4">
+    <label > </label>{{p.Name}}
+    <label>HP:</label>{{p.HP}}
+    <label>Attack:</label>{{p.Attack}}
+    <label>Defend:</label>{{p.Defend}}
   </div>
-  <div id="box3">
-  
-  <label for="plist"> Select a Pokemon</label>
-  
+
+</div>
+ <div class="box3">
+
+   <input #url  type="text"
+          placeholder="Search Your Pokemon:"
+          (input)="inputUrl(url.value)" [value]="input_url">
+   <button  (click)="createUrl(input_url)">clear</button>
+
+   </div>
+
+
+
+
+
+
+
+
+  <!--<div class="box1"> </div>
+
+  <div class="box2" *ngFor="let p of pokemons2">
+    <app-label>{{p.Name}}"SSSS"</app-label>
+    <app-label>{{p.HP}}</app-label>
+    <app-label>{{p.Attack}}</app-label>
+    <app-label>{{p.Defend}}</app-label>
+  </div>
+
+  <div class="box3">
+
+  <app-label> Select a Pokemon</app-label>
   <app-selector></app-selector>
    <app-input></app-input>
    <app-button></app-button>
- 
-  </div>
+  </div>-->
 </body>
 </html>
