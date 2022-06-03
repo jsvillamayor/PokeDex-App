@@ -72,17 +72,17 @@ export class AppComponent implements OnInit{
       }
     ]
 
-  input_url : String='';
+  inputPokemon : String='';
   condi: boolean=false;
 
-  inputUrl(url: String){
-    this.input_url=url;
+  inputPoke(url: String){
+    this.inputPokemon=url;
     for(let i=0;i<this.pokemons2.length;i++){
       if(this.pokemons2[i].Name==url) {this.condi=true;this.p=this.pokemons2[i]}
     }
   }
-  createUrl(url :String){
-     this.p=null;this.input_url="";
+  clear(url :String){
+     this.p=null;this.inputPokemon="";
   }
 
 

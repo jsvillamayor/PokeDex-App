@@ -56,8 +56,8 @@
 
    <input #url  type="text"
           placeholder="Search Your Pokemon:"
-          (input)="inputUrl(url.value)" [value]="input_url">
-   <button  (click)="createUrl(input_url)">clear</button>
+          (input)="inputPoke(url.value)" [value]="inputPokemon">
+   <button  (click)="clear(inputPokemon)">clear</button>
 
    </div>
 
