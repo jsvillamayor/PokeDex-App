@@ -17,6 +17,7 @@ public class PokeDexController {
     return "Welcome";
   }
 
+  @CrossOrigin(origins = "http://localhost:4200")
   @GetMapping(value="/pokemon")
   public List<Pokemons> getPokemons() {
     return pokemonRepo.findAll();

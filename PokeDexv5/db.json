@@ -1,44 +1,321 @@
 {
-  "pokemon": [
-    {
-      "ID": 1,
-      "Name": "name1",
-      "HP": 100,
-      "Attack": 100,
-      "Defend": 100,
-      "Picture": "picture1"
-    },
-    {
-      "ID": 2,
-      "Name": "name2",
-      "HP": 200,
-      "Attack": 200,
-      "Defend": 200,
-      "Picture": "picture2"
-    },
-    {
-      "ID": 3,
-      "Name": "name3",
-      "HP": 300,
-      "Attack": 300,
-      "Defend": 300,
-      "Picture": "picture3"
-    },
-    {
-      "ID": 4,
-      "Name": "name4",
-      "HP": 400,
-      "Attack": 400,
-      "Defend": 400,
-      "Picture": "picture4"
-    },
-    {
-      "ID": 5,
-      "Name": "name5",
-      "HP": 500,
-      "Attack": 500,
-      "Defend": 500,
-      "Picture": "picture5"
-    }
-  ]
+  "pokemon":
+    [
+      {
+        "id":1,
+        "name":"Picachu",
+        "hp": 190,
+        "attack":200,
+        "defend":80,
+        "picture":"assets/images/picachu2.png"
+      },
+      {
+        "id": 2,
+        "name": "Charizard",
+        "hp": 500,
+        "attack": 450,
+        "defend": 350,
+        "picture": "assets/images/charizard.png"
+      },
+      {
+        "id": 3,
+        "name": "Mewtwo",
+        "hp": 300,
+        "attack": 360,
+        "defend": 250,
+        "picture": "assets/images/mewtwo.png"
+      },
+      {
+        "id": 4,
+        "name": "Arceus",
+        "hp": 10000,
+        "attack": 13000,
+        "defend": 8000,
+        "picture": "assets/images/arceus.png"
+      },
+      {
+        "id": 5,
+        "name": "Jigglypuff",
+        "hp": 70,
+        "attack": 40,
+        "defend": 20,
+        "picture": "assets/images/jigglypuff.png"
+      },
+      {
+        "id": 6,
+        "name": "Snorlax",
+        "hp": 130,
+        "attack": 100,
+        "defend": 90,
+        "picture": "assets/images/snorlax.png"
+      },
+      {
+        "id": 7,
+        "name": "StarmieV",
+        "hp": 190,
+        "attack": 100,
+        "defend": 70,
+        "picture": "assets/images/starmie.png"
+      },
+      {
+        "id": 8,
+        "name": "Heracross",
+        "hp": 110,
+        "attack": 160,
+        "defend": 80,
+        "picture": "assets/images/heracross.png"
+      },
+      {
+        "id": 9,
+        "name": "Kricketot",
+        "hp": 60,
+        "attack": 15,
+        "defend": 10,
+        "picture": "assets/images/kricketot.png"
+      },
+      {
+        "id": 10,
+        "name": "Lilligant",
+        "hp": 110,
+        "attack": 100,
+        "defend": 80,
+        "picture": "assets/images/lilligant.png"
+      },
+      {
+        "id": 11,
+        "name": "Overqwil",
+        "hp": 130,
+        "attack": 50,
+        "defend": 50,
+        "picture": "assets/images/overqwil.png"
+      },
+      {
+        "id": 11,
+        "name": "Regice",
+        "hp": 130,
+        "attack": 100,
+        "defend": 100,
+        "picture": "assets/images/regice.png"
+      },
+      {
+        "id": 12,
+        "name": "Regirock",
+        "hp": 130,
+        "attack": 140,
+        "defend": 200,
+        "picture": "assets/images/regirock.png"
+      },
+      {
+        "id": 13,
+        "name": "Registeel",
+        "hp": 130,
+        "attack": 220,
+        "defend": 250,
+        "picture": "assets/images/registeel.png"
+      },
+      {
+        "id": 14,
+        "name": "Samurott",
+        "hp": 270,
+        "attack": 110,
+        "defend": 150,
+        "picture": "Assets/images/samurott.png"
+      },
+      {
+        "id": 15,
+        "name": "Sneasler",
+        "hp": 190,
+        "attack": 80,
+        "defend": 50,
+        "picture": "Assets/images/sneasler.png"
+      },
+      {
+        "id": 16,
+        "name": "Wyrdeer",
+        "hp": 220,
+        "attack": 40,
+        "defend": 100,
+        "picture": "assets/images/wyrdeer.png"
+      },
+      {
+        "id": 17,
+        "name": "Basculin",
+        "hp": 50,
+        "attack": 10,
+        "defend": 10,
+        "picture": "assets/images/basculin.png"
+      },
+      {
+        "id": 18,
+        "name": "Braviary",
+        "hp": 130,
+        "attack": 150,
+        "defend": 120,
+        "picture": "assets/images/braviary.png"
+      },
+      {
+        "id": 19,
+        "name": "Chatot",
+        "hp": 70,
+        "attack": 30,
+        "defend": 20,
+        "picture": "assets/images/chatot.png"
+      },
+      {
+        "id": 20,
+        "name": "Diancie",
+        "hp": 90,
+        "attack": 20,
+        "defend": 20,
+        "picture": "assets/images/diancie.png"
+      },
+      {
+        "id": 21,
+        "name": "Glameow",
+        "hp": 60,
+        "attack": 20,
+        "defend": 15,
+        "picture": "assets/images/glameow.png"
+      },
+      {
+        "id": 22,
+        "name": "Hoothoot",
+        "hp": 50,
+        "attack": 20,
+        "defend": 10,
+        "picture": "assets/images/hoothoot.png"
+      },
+      {
+        "id": 23,
+        "name": "Keldeo",
+        "hp": 110,
+        "attack": 30,
+        "defend": 50,
+        "picture": "assets/images/keldeo.png"
+      },
+      {
+        "id": 24,
+        "name": "Machamp",
+        "hp": 330,
+        "attack": 320,
+        "defend": 300,
+        "picture": "assets/images/machamp.png"
+      },
+      {
+        "id": 25,
+        "name": "Mamoswine",
+        "hp": 180,
+        "attack": 250,
+        "defend": 300,
+        "picture": "assets/images/mamoswine.png"
+      },
+      {
+        "id": 26,
+        "name": "Mantine",
+        "hp": 110,
+        "attack": 100,
+        "defend": 100,
+        "picture": "assets/images/mantine.png"
+      },
+      {
+        "id": 27,
+        "name": "Megneton",
+        "hp": 90,
+        "attack": 50,
+        "defend": 30,
+        "picture": "assets/images/megneton.png"
+      },
+      {
+        "id": 28,
+        "name": "Mesprit",
+        "hp": 70,
+        "attack": 30,
+        "defend": 35,
+        "picture": "assets/images/mesprit.png"
+      },
+      {
+        "id": 30,
+        "name": "Miltank",
+        "hp": 110,
+        "attack": 20,
+        "defend": 100,
+        "picture": "assets/images/miltank.png"
+      },
+      {
+        "id": 31,
+        "name": "Mrrime",
+        "hp": 210,
+        "attack": 300,
+        "defend": 90,
+        "picture": "assets/images/mrrime.png"
+      },
+      {
+        "id": 32,
+        "name": "Noctowl",
+        "hp": 100,
+        "attack": 170,
+        "defend": 200,
+        "picture": "assets/images/noctowl.png"
+      },
+      {
+        "id": 33,
+        "name": "Pallkia",
+        "hp": 280,
+        "attack": 390,
+        "defend": 360,
+        "picture": "assets/images/pallkia.png"
+      },
+      {
+        "id": 34,
+        "name": "Quilava",
+        "hp": 90,
+        "attack": 60,
+        "defend": 30,
+        "picture": "assets/images/quilava.png"
+      },
+      {
+        "id": 35,
+        "name": "Typhlosion",
+        "hp": 260,
+        "attack": 210,
+        "defend": 180,
+        "picture": "assets/images/typhlosion.png"
+      },
+      {
+        "id": 36,
+        "name": "Ursaring",
+        "hp": 130,
+        "attack": 180,
+        "defend": 140,
+        "picture": "assets/images/ursaring.png"
+      },
+      {
+        "id": 37,
+        "name": "Uxie",
+        "hp": 70,
+        "attack": 50,
+        "defend": 20,
+        "picture": "assets/images/uxie.png"
+      },
+      {
+        "id": 38,
+        "name": "Whisfish",
+        "hp": 120,
+        "attack": 200,
+        "defend": 200,
+        "picture": "assets/images/whisfish.png"
+      },
+      {
+        "id": 39,
+        "name": "Zapdos",
+        "hp": 200,
+        "attack": 340,
+        "defend": 170,
+        "picture": "assets/images/zapdos.png"
+      }
+
+
+
+
+    ]
 }

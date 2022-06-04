@@ -19,67 +19,88 @@ import {Component, OnInit} from '@angular/core';
 
 export class AppComponent implements OnInit{
   public p:any;
-  private pokemons: pokemon[]=[];
+  public pokemons: pokemon[]=[];
   public pokemons2: pokemon[]=
     [
       {
-        ID:1,
-        Name:"Picachu",
-        HP: 190,
-        Attack:200,
-        Defend:80,
-        Picture:"assets/images/picachu2.png"
+        "id":1,
+        "name":"Picachu",
+        "hp": 190,
+        "attack":200,
+        "defend":80,
+        "picture":"assets/images/picachu2.png"
       },
       {
-        "ID": 2,
-        "Name": "Charizard",
-        "HP": 500,
-        "Attack": 450,
-        "Defend": 350,
-        "Picture": "assets/images/Charizard.png"
+        "id": 2,
+        "name": "Charizard",
+        "hp": 500,
+        "attack": 450,
+        "defend": 350,
+        "picture": "assets/images/charizard.png"
       },
       {
-        "ID": 3,
-        "Name": "Mewtwo",
-        "HP": 300,
-        "Attack": 360,
-        "Defend": 250,
-        "Picture": "assets/images/Mewtwo.png"
+        "id": 3,
+        "name": "Mewtwo",
+        "hp": 300,
+        "attack": 360,
+        "defend": 250,
+        "picture": "assets/images/mewtwo.png"
       },
       {
-        "ID": 4,
-        "Name": "Arceus",
-        "HP": 10000,
-        "Attack": 13000,
-        "Defend": 8000,
-        "Picture": "assets/images/Arceus.png"
+        "id": 4,
+        "name": "Arceus",
+        "hp": 10000,
+        "attack": 13000,
+        "defend": 8000,
+        "picture": "assets/images/arceus.png"
       },
       {
-        "ID": 5,
-        "Name": "Jigglypuff",
-        "HP": 70,
-        "Attack": 40,
-        "Defend": 20,
-        "Picture": "assets/images/Jigglypuff.png"
+        "id": 5,
+        "name": "Jigglypuff",
+        "hp": 70,
+        "attack": 40,
+        "defend": 20,
+        "picture": "assets/images/jigglypuff.png"
       },
       {
-        "ID": 6,
-        "Name": "Snorlax",
-        "HP": 130,
-        "Attack": 100,
-        "Defend": 90,
-        "Picture": "assets/images/Snorlax.png"
-      }
+        "id": 6,
+        "name": "Snorlax",
+        "hp": 130,
+        "attack": 100,
+        "defend": 90,
+        "picture": "assets/images/snorlax.png"
+      },
+      {
+        "id": 7,
+        "name": "StarmieV",
+        "hp": 190,
+        "attack": 100,
+        "defend": 70,
+        "picture": "assets/images/starmie.png"
+      },
+
     ]
+
+  constructor(private http: HttpClient ) {
+  }
+  ngOnInit() {
+    let resp= this.http.get("http://localhost:3000/pokemon");
+    //resp.subscribe((data) => console.log(data));
+    resp.subscribe( (response: any)=>{
+      this.pokemons=response;
+    })
+
+  }
 
   inputPokemon : String='';
   condi: boolean=false;
 
   inputPoke(url: String){
     this.inputPokemon=url;
-    for(let i=0;i<this.pokemons2.length;i++){
-      if(this.pokemons2[i].Name==url) {this.condi=true;this.p=this.pokemons2[i]}
+    for(let i=0;i<this.pokemons.length;i++){
+      if(this.pokemons[i].name==url) {this.condi=true;this.p=this.pokemons[i];}
     }
+
   }
   clear(url :String){
      this.p=null;this.inputPokemon="";
@@ -88,15 +109,7 @@ export class AppComponent implements OnInit{
 
 
 
-  constructor(private http: HttpClient ) {
-  }
-  ngOnInit() {
-    let resp= this.http.get("http://localhost:8081/pokemon");
-    //
-    resp.subscribe((data) => console.log(data));
 
-
-  }
 
 
 }
