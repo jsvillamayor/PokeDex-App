@@ -13,31 +13,9 @@
 </div>
 
 <div class="box6">Welcome to Pokemon's World</div>
-<!--
-<div >
-  Search: <input type="text" placeholder="Search Pokemon" ng-model="searchText"/>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>HP</th>
-        <th>Attack</th>
-        <th>Defend</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr ng-repeat="pp in pokemons2">
-        <td>{{pp.Name}}</td>
-        <td>{{pp.HP}}</td>
-        <td>{{pp.Attack}}</td>
-        <td>{{pp.Defend}}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
--->
 
-<!--
+
+<!-- (This is for testing)
  <div *ngFor="let o of pokemons" class="box1"><img class="image1" src="{{o.picture}}" alt="Picture">
    <div class="box4">
      <label>  </label>{{o.name}}
@@ -48,7 +26,7 @@
  </div>
 -->
 
-
+<!-- (if user input a pokemon that exits in the database display it)  -->
 <div *ngIf="p" class="box5"><img class="image1" src="{{p.picture}}" alt="{{p.picture}}">
   <div class="box4">
     <label > </label>{{p.name}}
@@ -71,24 +49,5 @@
   <img class="image2"src="assets/images/cc.png" alt="cc_picture">
 </div>
 
-
-
-  <!--<div class="box1"> </div>
-
-  <div class="box2" *ngFor="let p of pokemons2">
-    <app-label>{{p.Name}}"SSSS"</app-label>
-    <app-label>{{p.HP}}</app-label>
-    <app-label>{{p.Attack}}</app-label>
-    <app-label>{{p.Defend}}</app-label>
-  </div>
-
-  <div class="box3">
-
-  <app-label> Select a Pokemon</app-label>
-  <app-selector></app-selector>
-   <app-input></app-input>
-   <app-button></app-button>
-  </div>
-  -->
 </body>
 </html>
