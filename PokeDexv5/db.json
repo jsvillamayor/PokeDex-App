@@ -119,7 +119,7 @@
         "hp": 270,
         "attack": 110,
         "defend": 150,
-        "picture": "Assets/images/samurott.png"
+        "picture": "assets/images/samurott.png"
       },
       {
         "id": 15,
@@ -127,7 +127,7 @@
         "hp": 190,
         "attack": 80,
         "defend": 50,
-        "picture": "Assets/images/sneasler.png"
+        "picture": "assets/images/sneasler.png"
       },
       {
         "id": 16,
