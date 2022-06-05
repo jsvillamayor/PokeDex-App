@@ -98,7 +98,7 @@ export class AppComponent implements OnInit{
   inputPoke(url: String){
     this.inputPokemon=url;
     for(let i=0;i<this.pokemons.length;i++){
-      if(this.pokemons[i].name==url) {this.condi=true;this.p=this.pokemons[i];}
+      if((this.pokemons[i].name).toLocaleLowerCase()==(url).toLocaleLowerCase()) {this.condi=true;this.p=this.pokemons[i];}
     }
 
   }
