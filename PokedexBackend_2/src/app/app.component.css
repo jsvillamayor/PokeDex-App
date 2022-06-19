@@ -1,0 +1,101 @@
+.box1{
+  margin-left: 300px;
+  margin-right: 600px;
+  margin-top:20px;
+  margin-bottom:20px;
+
+  border-color: lightslategray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.box2{
+  margin-left: 300px;
+  margin-right: 600px;
+  margin-top:50px;
+  margin-bottom:50px;
+  border: 2px solid;
+  border-color: lightslategray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.box3{
+  margin-left: 300px;
+  margin-right: 600px;
+  margin-top:5px;
+  margin-bottom:10px;
+  border-color: lightslategray;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+lable{
+  display: inline-block;
+  margin-left: 5px;
+}
+.image1{
+  width: 88%;
+  border: 5px solid;
+  border-color: black;
+}
+.image2{
+  width: 100%;
+
+}
+
+.box4{
+  margin-left: 2px;
+  margin-right: 39px;
+  border: 3px solid;
+  background-color: gold;
+
+  border-color: lightslategray;
+}
+.box5{
+  margin-left: 500px;
+  margin-right: 400px;
+  margin-top:20px;
+  margin-bottom:1px;
+
+  border-color: lightslategray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+body{
+  background-color: dodgerblue;
+}
+.box6{
+  margin-left: 300px;
+  margin-right: 400px;
+  margin-bottom:30px;
+  font-size: xxx-large;
+}
+.box7{
+  margin-left: 300px;
+}
+.box8{
+  margin-left: 2px;
+}
+.name1{
+
+}
+.order2{
+  margin-top: 6px;
+}
+.price{
+  margin-top: 3px;
+}
+button{
+  margin-left: 20px;
+}
+.input1{
+  height: 18px;
+  width: 220px;
+}
