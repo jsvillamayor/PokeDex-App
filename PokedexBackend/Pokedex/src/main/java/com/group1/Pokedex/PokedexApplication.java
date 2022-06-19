@@ -2,13 +2,14 @@ package com.group1.Pokedex;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-public class PokedexApplication {
-
+@RestController
+public class PokedexApplication{
+	
 	public static void main(String[] args) {
 		SpringApplication.run(PokedexApplication.class, args);
 	}
-	
 
 }
