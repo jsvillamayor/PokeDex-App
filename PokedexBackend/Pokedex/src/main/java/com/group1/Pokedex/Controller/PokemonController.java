@@ -20,10 +20,9 @@ import lombok.AllArgsConstructor;
 
 @RestController
 @RequestMapping("/pokemon")
-@AllArgsConstructor
 public class PokemonController {
 
-	private final PokemonService pokemonService;
+	private  PokemonService pokemonService;
 	
 	public PokemonController(PokemonService pokemonService) {
 		this.pokemonService = pokemonService;
