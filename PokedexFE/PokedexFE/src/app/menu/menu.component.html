@@ -1,10 +1,15 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <!--<div><a href="https://www.javaguides.net" class="navbar-brand">JavaGuides</a></div>-->
+    <div><a class="navbar-brand">PokeDex Database</a></div>
     <ul class="navbar-nav">
-      <li><a class="nav-link" href="/hello-world">Hello World Pokemon</a></li>
       <li><a class="nav-link" href="/list">Pokemon List</a></li>
       <li><a class="nav-link" href="/search"> Search Pokemon</a></li>
     </ul>
+    <ul class="navbar-nav navbar-collapse justify-content-end">
+      <li>
+          <a *ngIf="this.authenticationService.isUserLoggedIn();" class="nav-link" href="/logout" (click)=handleLogout()>Logout</a>
+      </li>
+        <li><a *ngIf="!this.authenticationService.isUserLoggedIn()" class="nav-link" href="/login">Log in</a></li>
+  </ul>
   </nav>
 </header>
