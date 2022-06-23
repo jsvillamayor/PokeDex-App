@@ -13,7 +13,7 @@ export class SearchComponent implements OnInit {
   constructor(private http: HttpClient ) {
   }
   ngOnInit(): void {
-    let resp= this.http.get("http://localhost:8080/pokemon");
+    let resp= this.http.get("http://localhost:8080/getAllPokemon");
     // resp.subscribe((data) => console.log(data));
     resp.subscribe( (response: any)=>{
       this.pokemons=response;

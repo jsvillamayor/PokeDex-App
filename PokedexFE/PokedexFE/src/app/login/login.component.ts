@@ -25,6 +25,10 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  create(){
+    this.router.navigate(['/register']);
+  }
+
   handleLogin(){
     this.authenticationService.authenticationService(this.username, this.password).subscribe((result) => {
       this.invalidLogin = false;

@@ -10,9 +10,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.web.bind.annotation.CrossOrigin;
 
-@CrossOrigin(origins = "http://localhost:4200")
 @EnableWebSecurity
 @Configuration
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter{
@@ -24,18 +22,27 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter{
 	public void configAuthentication(AuthenticationManagerBuilder auth) throws Exception {
         auth.jdbcAuthentication().passwordEncoder(new BCryptPasswordEncoder())
             .dataSource(dataSource)
-            .usersByUsernameQuery("select username, password, 'true' as enabled from userdb where username=?")
-            .authoritiesByUsernameQuery("select username, role from userdb where username=?")
+            .usersByUsernameQuery("select username, password, 'true' as enabled from user where username=?")
+            .authoritiesByUsernameQuery("select username, role from user where username=?")
         ;
     }
 	
+//	@Override
+//    protected void configure(HttpSecurity http) throws Exception{
+//        http.cors().and().csrf().
+//        disable()
+//        .authorizeRequests()
+//        .antMatchers("/addPokemon")
+//        .authenticated()
+//        .antMatchers("/get**")
+//        .permitAll()
+//        .and()
+//        .httpBasic();
+//    }
+	
 	@Override
     protected void configure(HttpSecurity http) throws Exception{
-        http.cors().and().csrf().
-        disable()
-        .authorizeRequests()
-        .antMatchers("/get**").permitAll()
-        .antMatchers("/addPokemon").authenticated()
-        .and().httpBasic();
+		http.csrf().
+	     disable();
     }
 }

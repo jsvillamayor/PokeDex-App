@@ -17,7 +17,7 @@ export class AuthenicationService {
   }
 
   authenticationService(username: string, password: String){
-    return this.http.get(`http://localhost:8080/pokemon`,
+    return this.http.get(`http://localhost:8080/api/v1/basicauth`,
       { headers: { authorization: this.createBasicAuthToken(username, password) } }).pipe(map((res) => {
         this.username = username;
         this.password = password;

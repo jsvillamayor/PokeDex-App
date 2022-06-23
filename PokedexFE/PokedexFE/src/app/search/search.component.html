@@ -6,12 +6,17 @@
 </div>
 
 <ul *ngIf="a">
-  <div *ngFor="let o of a" class="box5"> <img class="image1" src="{{o.imageUrl}}" alt="{{o.imageUrl}}">
+  <div *ngFor="let o of a" class="box5"> 
     <div class="box4">
-      <label > </label>{{o.name}}
+      <label>  </label>{{o.name}}     
+      <label>Pokedex No.:</label> {{o.pokedexNumber}}
+    </div>
+    <img class="image1" src="{{o.imageUrl}}" >
+    <div class="box4">
       <label>HP:</label>{{o.hp}}
       <label>Attack:</label>{{o.attack}}
       <label>Defend:</label>{{o.defend}}
     </div>
   </div>
 </ul>
+

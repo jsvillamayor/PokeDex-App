@@ -34,13 +34,14 @@
   padding-right: 5px;
 }
 
-lable{
+label{
   display: inline-block;
   margin-left: 5px;
 }
 .image1{
-  width: 88%;
-  border: 5px solid;
+  width: 280px;
+  height: 300px;
+  border: 3px solid;
   border-color: black;
 }
 .image2{
@@ -51,6 +52,7 @@ lable{
 .box4{
   margin-left: 2px;
   margin-right: 39px;
+  width: 280px;
   border: 3px solid;
   background-color: gold;
 
@@ -94,3 +96,5 @@ button{
   height: 18px;
   width: 220px;
 }
+
+

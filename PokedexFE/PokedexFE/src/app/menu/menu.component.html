@@ -2,8 +2,11 @@
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div><a class="navbar-brand">PokeDex Database</a></div>
     <ul class="navbar-nav">
-      <li><a class="nav-link" href="/list">Pokemon List</a></li>
+      <li><a class="nav-link" href="/list">Browse Collection</a></li>
       <li><a class="nav-link" href="/search"> Search Pokemon</a></li>
+      <li>
+        <a *ngIf="this.authenticationService.isUserLoggedIn();" class="nav-link" href="/create">Create Pokemon</a>
+    </li>
     </ul>
     <ul class="navbar-nav navbar-collapse justify-content-end">
       <li>

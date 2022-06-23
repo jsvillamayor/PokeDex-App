@@ -1,18 +1,25 @@
-package com.group1.Pokedex;
+package com.group1.Pokedex.Models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class User {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	@Column
 	private String username;
+	@Column
 	private String password;
+	@Column
 	private String role;
+	@Column
 	private boolean enabled;
-	
-	
 	
 	public User(String username, String password, String role, boolean enabled) {
 		this.username = username;
