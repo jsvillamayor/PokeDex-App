@@ -1,16 +1,17 @@
-<div *ngIf="p" class="box5"><img class="image1" src="{{p.imageUrl}}" >
-  <div class="box4">
-    <label > </label>{{p.name}}
-    <label>HP:</label>{{p.hp}}
-    <label>Attack:</label>{{p.attack}}
-    <label>Defend:</label>{{p.defend}}
-  </div>
-</div>
 <div class="box3">
 
   <input #url class="input1" type="text"
-         placeholder="Search Your Pokemon :"
-         (input)="inputPoke(url.value)" [value]="inputPokemon">
-  <button  (click)="clear(inputPokemon)">clear</button>
+         placeholder="Search Your Pokemon :">
+  <button  (click)="inputPoke(url.value)" [value]="inputPokemon">Seach</button>
 </div>
 
+<ul *ngIf="a">
+  <div *ngFor="let o of a" class="box5"> <img class="image1" src="{{o.imageUrl}}" alt="{{o.imageUrl}}">
+    <div class="box4">
+      <label > </label>{{o.name}}
+      <label>HP:</label>{{o.hp}}
+      <label>Attack:</label>{{o.attack}}
+      <label>Defend:</label>{{o.defend}}
+    </div>
+  </div>
+</ul>
