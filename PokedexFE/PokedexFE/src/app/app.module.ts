@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import {HttpInterceptorService} from "./basic-auth-interceptor.service";
 import {FormsModule} from "@angular/forms";
 import { LogoutComponent } from './logout/logout.component';
+import {NgxPaginationModule} from "ngx-pagination";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { LogoutComponent } from './logout/logout.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
+    HttpClientModule,NgxPaginationModule,
     AppRoutingModule,
     FormsModule
   ],

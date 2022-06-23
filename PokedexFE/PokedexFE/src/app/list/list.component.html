@@ -1,4 +1,4 @@
-<div *ngFor="let o of pokemons" class="box1"><img class="image1" src="{{o.imageUrl}}" >
+<div class="box5" *ngFor="let o of pokemons | paginate :{itemsPerPage:8,currentPage:p}"><img class="image1" src="{{o.imageUrl}}" >
   <div class="box4">
     <label>  </label>{{o.name}}
     <label>HP:</label>{{o.hp}}
@@ -6,3 +6,4 @@
     <label>Defend:</label>{{o.defend}}
   </div>
 </div>
+<pagination-controls (pageChange)="p=$event"></pagination-controls>

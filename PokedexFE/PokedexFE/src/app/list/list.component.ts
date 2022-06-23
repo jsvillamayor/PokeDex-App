@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {pokemon} from "./pokemon";
 import {HttpClient} from "@angular/common/http";
+import {NgxPaginationModule}  from 'ngx-pagination';
 
 
 @Component({
@@ -10,7 +11,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class ListComponent implements OnInit {
 
-  public p:any;
+  p :number=1;
   public pokemons: pokemon[]=[];
   constructor(private http: HttpClient ) {
   }
