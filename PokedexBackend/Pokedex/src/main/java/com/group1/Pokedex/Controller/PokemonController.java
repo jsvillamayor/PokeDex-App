@@ -18,7 +18,6 @@ import com.group1.Pokedex.Service.PokemonService;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/pokemon")
 public class PokemonController {
 
 	private final PokemonService pokemonService;
@@ -27,32 +26,20 @@ public class PokemonController {
 		this.pokemonService = pokemonService;
 	}
 	
-	@PostMapping
+	@PostMapping("/addPokemon")
 	public ResponseEntity addPokemon(@RequestBody Pokemon pokemon) {
 		pokemonService.addPokemon(pokemon);
 		return ResponseEntity.status(HttpStatus.CREATED).build();
 	}
 	
-	@PutMapping
-	public ResponseEntity updatePokemon(@RequestBody Pokemon pokemon) {
-		pokemonService.updatePokemon(null);
-		return ResponseEntity.ok().build();
-	}
-	
-	@GetMapping
+	@GetMapping("/getAllPokemon")
 	public ResponseEntity<List<Pokemon>> getAllPokemon() {
 		return ResponseEntity.ok(pokemonService.getAllPokemon());
 	}
 	
-	@GetMapping("/{name}")
+	@GetMapping("/get/{name}")
 	public ResponseEntity getPokemonByName(@PathVariable String name) {
 		return ResponseEntity.ok(pokemonService.getPokemonByName(name));
-	}
-	
-	@DeleteMapping("/{id}")
-	public ResponseEntity deletePokemon(@PathVariable String id) {
-		pokemonService.deletePokemon(id);
-		return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 	}
 	
 }
