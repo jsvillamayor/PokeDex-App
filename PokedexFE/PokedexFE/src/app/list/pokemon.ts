@@ -1,4 +1,4 @@
-export interface pokemon {
+export class pokemon {
   id:string;
   pokedexNumber: number;
   name:string;

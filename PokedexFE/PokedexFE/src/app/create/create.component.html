@@ -1,1 +1,35 @@
-<p>create works!</p>
+<div class="container col-lg-6">
+  <h1 class="text-center">Create New Card</h1>
+  <div class="card">
+    <div class="card-body">
+      <form class="form-group">
+
+        <div class="form-group">
+          <input type="text" class="form-control" [(ngModel)]="newPoke.pokedexNumber" placeholder="Set Card pokedexNumber" >
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control"  [(ngModel)]="newPoke.name" placeholder="Set Card name" >
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" [(ngModel)]="newPoke.hp"  placeholder="Set Card hp" >
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" [(ngModel)]="newPoke.attack"  placeholder="Set Card attack" >
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" [(ngModel)]="newPoke.defend"  placeholder="Set Card defend" >
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" [(ngModel)]="newPoke.imageUrl"  placeholder="Set Card imageUrl" >
+        </div>
+
+        <button (click)="create()" class="btn btn-secondary">Create an Pokemon</button>
+      </form>
+    </div>
+  </div>
+</div>

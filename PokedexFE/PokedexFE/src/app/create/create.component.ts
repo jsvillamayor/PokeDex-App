@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {pokemon} from "../list/pokemon";
 
 @Component({
   selector: 'app-create',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateComponent implements OnInit {
 
+  public newPoke: pokemon=new pokemon();
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log();
+  }
+
+  create(){
+    //database. insert(newPoke);
   }
 
 }
