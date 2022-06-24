@@ -14,6 +14,7 @@ import { LogoutComponent } from './logout/logout.component';
 import {NgxPaginationModule} from "ngx-pagination";
 import { RegisterComponent } from './register/register.component';
 import { UserService } from './user/user.service';
+import { CreateComponent } from './create/create.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { UserService } from './user/user.service';
     SearchComponent,
     LoginComponent,
     LogoutComponent,
-    RegisterComponent
+    RegisterComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
