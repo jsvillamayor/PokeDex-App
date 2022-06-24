@@ -91,13 +91,15 @@ body{
   margin-top: 3px;
 }
 
-/*
+
 button{
   margin-left: 20px;
 }
 .input1{
-  height: 18px;
-  width: 220px;
-}*/
+  border: 2px solid gray;
+  border-radius: 5px;
+  height: 39px;
+  width: 250px;
+}
 
 
