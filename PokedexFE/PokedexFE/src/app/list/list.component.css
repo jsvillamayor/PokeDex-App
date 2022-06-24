@@ -63,6 +63,7 @@ label{
   height: 339px;
   display: inline-block;
   margin-left: 10px;
+  margin-top:20px;
 
 }
 body{
@@ -89,12 +90,14 @@ body{
 .price{
   margin-top: 3px;
 }
+
+/*
 button{
   margin-left: 20px;
 }
 .input1{
   height: 18px;
   width: 220px;
-}
+}*/
 
 

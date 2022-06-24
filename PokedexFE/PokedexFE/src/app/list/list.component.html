@@ -1,13 +1,16 @@
 <div class="box5" *ngFor="let o of pokemons | paginate :{itemsPerPage:15,currentPage:p}">
+
+
+  <img (click)="show(o)" class="image1" src="{{o.imageUrl}}" >
   <div class="box4">
-    <label>  </label>{{o.name}}     
+    <label>  </label>{{o.name}}
     <label>Pokedex No.:</label> {{o.pokedexNumber}}
   </div>
-  <img class="image1" src="{{o.imageUrl}}" >
   <div class="box4">
     <label>HP:</label>{{o.hp}}
     <label>Attack:</label>{{o.attack}}
     <label>Defend:</label>{{o.defend}}
   </div>
+
 </div>
 <pagination-controls (pageChange)="p=$event"></pagination-controls>

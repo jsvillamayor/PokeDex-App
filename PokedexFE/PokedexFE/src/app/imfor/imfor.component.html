@@ -1,0 +1,12 @@
+<h1  mat-dialog-title>Card Information</h1> <p>{{data.message.pokedexNumber}}<span> .</span>
+  {{data.message.name}}<span>   HP:</span>{{data.message.hp}}
+  <span>   Attack:</span>{{data.message.attack}}<span>   Defend:</span>{{data.message.defend}}</p>
+<mat-dialog-content> <img
+  class="image1" src="{{data.message.imageUrl}}"
+  alt="Picture"></mat-dialog-content>
+<mat-dialog-actions>
+
+  <button mat-raised-button *ngIf="this.authenticationService.isUserLoggedIn()" (click)="delete(data.message)">Delete</button>
+  <span>        </span>
+  <button  mat-raised-button (click)="closeMe()">Close</button>
+</mat-dialog-actions>

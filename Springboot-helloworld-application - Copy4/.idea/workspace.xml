@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0ac6bd6-130c-4db6-9046-9234b1015e03" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ApIhJbbxvkJIzyDVj8bdjOVhdX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/senhai/Desktop/demo6",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "373338cac99bff6be110c8e18b101dd3",
+    "ts.external.directory.path": "C:\\Users\\senhai\\Desktop\\Springboot-helloworld-application - Copy4\\helloworld-example-tutorial\\node_modules\\typescript\\lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\senhai\Desktop\Springboot-helloworld-application\helloworld-example-tutorial\src\assets" />
+      <recent name="C:\Users\senhai\Desktop\Springboot-helloworld-application\helloworld-example-tutorial" />
+      <recent name="C:\Users\senhai\Desktop\Springboot-helloworld-application" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\senhai\Desktop\Springboot-helloworld-application\helloworld-example-tutorial" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Springboot-helloworld-application - Copy3 - Copy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Springboot-helloworld-application - Copy3 - Copy" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootHelloworldApplication (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="Springboot-helloworld-application - Copy4" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.javaguides.springboot.springboothelloworldapplication.SpringbootHelloworldApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/helloworld-example-tutorial/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Angular Application" />
+      <item itemvalue="npm.Angular CLI Server" />
+      <item itemvalue="Spring Boot.SpringbootHelloworldApplication (3)" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0ac6bd6-130c-4db6-9046-9234b1015e03" name="Changes" comment="" />
+      <created>1655700222298</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655700222298</updated>
+      <workItem from="1655700223532" duration="1832000" />
+      <workItem from="1655702856208" duration="133000" />
+      <workItem from="1655703009852" duration="1570000" />
+      <workItem from="1655704699397" duration="302000" />
+      <workItem from="1655705039679" duration="576000" />
+      <workItem from="1655705638385" duration="63000" />
+      <workItem from="1655705736719" duration="741000" />
+      <workItem from="1655736002709" duration="9299000" />
+      <workItem from="1655748071820" duration="3830000" />
+      <workItem from="1655752136002" duration="2936000" />
+      <workItem from="1655770717846" duration="1036000" />
+      <workItem from="1655771781136" duration="139000" />
+      <workItem from="1655771929447" duration="1351000" />
+      <workItem from="1655781225495" duration="170000" />
+      <workItem from="1655781430740" duration="1620000" />
+      <workItem from="1655783129651" duration="1169000" />
+      <workItem from="1655790535121" duration="9000" />
+      <workItem from="1655790602304" duration="31000" />
+      <workItem from="1655790790029" duration="225000" />
+      <workItem from="1655791528012" duration="1935000" />
+      <workItem from="1655793793818" duration="138000" />
+      <workItem from="1655793963972" duration="322000" />
+      <workItem from="1655794453531" duration="1524000" />
+      <workItem from="1655824389953" duration="1586000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
