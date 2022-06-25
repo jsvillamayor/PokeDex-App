@@ -40,7 +40,7 @@ public class PokemonController {
 		return ResponseEntity.ok(pokemonService.getPokemonByName(name));
 	}
 	
-	@DeleteMapping("/{id}")
+	@DeleteMapping("/delete/{id}")
     public ResponseEntity deletePokemon(@PathVariable String id) {
         pokemonService.deletePokemon(id);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
