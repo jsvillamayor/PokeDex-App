@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {pokemon} from "./pokemon";
+import {pokemon} from "../pokemon/pokemon";
 import {HttpClient} from "@angular/common/http";
 import {NgxPaginationModule}  from 'ngx-pagination';
 import {ImforComponent} from "../imfor/imfor.component";

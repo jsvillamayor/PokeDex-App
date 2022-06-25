@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import {pokemon} from "../list/pokemon";
+import { Observable } from 'rxjs';
+import {pokemon} from "../pokemon/pokemon";
 
 @Component({
   selector: 'app-create',
@@ -10,14 +12,11 @@ export class CreateComponent implements OnInit {
 
   public newPoke: pokemon=new pokemon();
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
     console.log();
   }
 
-  create(){
-    //database. insert(newPoke);
-  }
 
 }
