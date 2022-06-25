@@ -12,6 +12,7 @@ import { UserService } from '../user/user.service';
 export class RegisterComponent implements OnInit {
 
   user: User = new User();
+  errorMessage = '';
 
   constructor(private userService: UserService, private router: Router) { }
 
@@ -19,11 +20,21 @@ export class RegisterComponent implements OnInit {
   }
 
   register(){
+
+    if(!this.user.username){
+      this.errorMessage = "Username is required"
+      return;
+    }
+
+    if(!this.user.password){
+      this.errorMessage = "Password is required"
+      return;
+    }
+
     this.user.enabled = true;
     this.user.role = 'ROLE_USER';
     this.userService.addUser(this.user).subscribe(
       (response: User) => {
-        console.log(response);
         this.router.navigate(['/list']);
       },
       (error: HttpErrorResponse) => {

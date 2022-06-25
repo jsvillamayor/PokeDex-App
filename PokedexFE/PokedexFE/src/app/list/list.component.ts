@@ -4,8 +4,6 @@ import {HttpClient} from "@angular/common/http";
 import {NgxPaginationModule}  from 'ngx-pagination';
 import {ImforComponent} from "../imfor/imfor.component";
 import {MatDialog} from "@angular/material/dialog";
-import { AuthenicationService } from '../login/auth.service';
-
 
 @Component({
   selector: 'app-list',

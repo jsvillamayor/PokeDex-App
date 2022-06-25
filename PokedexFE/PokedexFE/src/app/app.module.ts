@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { ListComponent } from './list/list.component';
-import { SearchComponent } from './search/search.component';
 import { LoginComponent } from './login/login.component';
 import {BasicAuthInterceptorService} from "./basic-auth-interceptor.service";
 import {FormsModule} from "@angular/forms";
@@ -29,7 +28,6 @@ import { RouterModule } from '@angular/router';
     AppComponent,
     MenuComponent,
     ListComponent,
-    SearchComponent,
     LoginComponent,
     LogoutComponent,
     RegisterComponent,
