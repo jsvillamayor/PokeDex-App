@@ -19,6 +19,7 @@ export class CreateComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
   create(){
     this.pokemonService.addPokemon(this.newPoke).subscribe(
