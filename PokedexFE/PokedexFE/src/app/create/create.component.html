@@ -1,31 +1,31 @@
 <div class="container col-lg-6">
-  <h1 class="text-center">Create New Card</h1>
+  <h1 class="text-center">Create New Pokemon</h1>
   <div class="card">
     <div class="card-body">
       <form class="form-group">
 
         <div class="form-group">
-          <input type="text" class="form-control" [(ngModel)]="newPoke.pokedexNumber" placeholder="Set Card pokedexNumber" >
+          <input type="text" class="form-control"  [(ngModel)]="newPoke.name" name="name" placeholder="Pokemon Name" >
         </div>
 
         <div class="form-group">
-          <input type="text" class="form-control"  [(ngModel)]="newPoke.name" placeholder="Set Card name" >
+          <input type="text" class="form-control" [(ngModel)]="newPoke.pokedexNumber" name="pokedexNumber" placeholder="Pokemon #" >
         </div>
 
         <div class="form-group">
-          <input type="text" class="form-control" [(ngModel)]="newPoke.hp"  placeholder="Set Card hp" >
+          <input type="text" class="form-control" [(ngModel)]="newPoke.hp" name="hp" placeholder="HP Stat" >
         </div>
 
         <div class="form-group">
-          <input type="text" class="form-control" [(ngModel)]="newPoke.attack"  placeholder="Set Card attack" >
+          <input type="text" class="form-control" [(ngModel)]="newPoke.attack" name="attack" placeholder="Attack Stat" >
         </div>
 
         <div class="form-group">
-          <input type="text" class="form-control" [(ngModel)]="newPoke.defend"  placeholder="Set Card defend" >
+          <input type="text" class="form-control" [(ngModel)]="newPoke.defend" name="defend" placeholder="Defense Stat" >
         </div>
 
         <div class="form-group">
-          <input type="text" class="form-control" [(ngModel)]="newPoke.imageUrl"  placeholder="Set Card imageUrl" >
+          <input type="text" class="form-control" [(ngModel)]="newPoke.imageUrl" name="imageUrl" placeholder="Image URL" >
         </div>
 
         <button (click)="create()" class="btn btn-secondary">Create an Pokemon</button>

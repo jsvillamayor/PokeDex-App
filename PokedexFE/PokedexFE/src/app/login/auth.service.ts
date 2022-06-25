@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
 })
 export class AuthenicationService {
 
-  USER_NAME_SESSION_ATTRIBUTE_NAME = 'authenticaatedUser'
+  USER_NAME_SESSION_ATTRIBUTE_NAME = 'authenticatedUser'
 
   public username: String | null;
   public password: String | null;
