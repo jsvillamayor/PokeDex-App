@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {pokemon} from "../pokemon/pokemon";
 import {HttpClient} from "@angular/common/http";
+import { AuthenicationService } from '../login/auth.service';
 
 @Component({
   selector: 'app-search',
@@ -10,7 +11,7 @@ import {HttpClient} from "@angular/common/http";
 export class SearchComponent implements OnInit {
   public p:any;
   public pokemons: pokemon[]=[];
-  constructor(private http: HttpClient ) {
+  constructor(private http: HttpClient) {
   }
   ngOnInit(): void {
     let resp= this.http.get("http://localhost:8080/getAllPokemon");

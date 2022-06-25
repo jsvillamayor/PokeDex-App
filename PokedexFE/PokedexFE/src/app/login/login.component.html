@@ -13,7 +13,7 @@
                     <label for="pwd">Password: </label>
                     <input type="password" class="form-control" [(ngModel)]="password" id="password" placeholder="Enter Password" name="password">
                 </div>
-                <button (click)=handleLogin() class="btn btn-success">Login</button>
+                <button (click)="handleLogin()" class="btn btn-success">Login</button>
                 <div>Don't have an account?</div>
                 <button (click)="create()" class="btn btn-secondary">Create an Account</button>
             </form>

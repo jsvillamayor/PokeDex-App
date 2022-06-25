@@ -1,8 +1,8 @@
 <div class="box3">
 
-  <input  #url class="input1" type="text"
-          placeholder="Search Your Pokemon :" >
-  <button  mat-raised-button (click)="inputPoke(url.value)" >Seach</button>
+  <input  #url class="input1" type="text" 
+          placeholder="Search Your Pokémon :" >
+  <button  mat-raised-button (click)="inputPoke(url.value)" >Search</button>
   <button  mat-raised-button  (click)="clear()" >Clear</button>
 
 </div>
@@ -13,7 +13,7 @@
     <img class="image1" src="{{o.imageUrl}}" >
     <div class="box4">
       <label>  </label>{{o.name}}
-      <label>Pokedex No.:</label> {{o.pokedexNumber}}
+      <label>Pokédex No.:</label> {{o.pokedexNumber}}
     </div>
 
     <div class="box4">
@@ -25,13 +25,13 @@
 </ul>
 
 
-<div class="box5" *ngFor="let o of pokemons | paginate :{itemsPerPage:15,currentPage:p}">
+<div class="box5" *ngFor="let o of pokemons | paginate :{itemsPerPage:12,currentPage:p}">
 
 
   <img (click)="show(o)" class="image1" src="{{o.imageUrl}}" >
   <div class="box4">
     <label>  </label>{{o.name}}
-    <label>Pokedex No.:</label> {{o.pokedexNumber}}
+    <label>Pokedéx No.:</label> {{o.pokedexNumber}}
   </div>
   <div class="box4">
     <label>HP:</label>{{o.hp}}

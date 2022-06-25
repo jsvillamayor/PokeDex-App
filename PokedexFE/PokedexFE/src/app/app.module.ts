@@ -8,7 +8,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { ListComponent } from './list/list.component';
 import { SearchComponent } from './search/search.component';
 import { LoginComponent } from './login/login.component';
-import {HttpInterceptorService} from "./basic-auth-interceptor.service";
+import {BasicAuthInterceptorService} from "./basic-auth-interceptor.service";
 import {FormsModule} from "@angular/forms";
 import { LogoutComponent } from './logout/logout.component';
 import {NgxPaginationModule} from "ngx-pagination";
@@ -22,6 +22,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule } from '@angular/material/dialog';
 import { ImforComponent } from './imfor/imfor.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -36,15 +37,14 @@ import { ImforComponent } from './imfor/imfor.component';
     ImforComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,AppRoutingModule,
     HttpClientModule,NgxPaginationModule,
-    AppRoutingModule,
     FormsModule,MatDialogModule, MatInputModule, MatButtonModule, MatCardModule, MatFormFieldModule,
     BrowserAnimationsModule
   ],
   providers: [UserService,
     { provide: HTTP_INTERCEPTORS,
-      useClass: HttpInterceptorService,
+      useClass: BasicAuthInterceptorService,
       multi: true
     }],
   bootstrap: [AppComponent]
