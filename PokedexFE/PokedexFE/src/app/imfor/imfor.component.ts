@@ -18,9 +18,8 @@ export class ImforComponent {
   }
   delete (o:pokemon){
       this.pokemonService.deletePokemon(o.id);
-<<<<<<< HEAD
+
       console.log("hello");
-=======
->>>>>>> 25c9b273d6b1b228a5529c94dae7ad570dbb8166
+
   }
 }

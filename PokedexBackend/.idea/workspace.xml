@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d318bc30-b244-41de-9dd9-523e416c602e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokedex/src/main/java/com/group1/Pokedex/SpringSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokedex/src/main/java/com/group1/Pokedex/SpringSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokedex/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Pokedex/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/imfor/imfor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/imfor/imfor.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/pokemon/pokemon.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/pokemon/pokemon.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +132,7 @@
       <workItem from="1656026561397" duration="919000" />
       <workItem from="1656032860843" duration="3247000" />
       <workItem from="1656086411449" duration="2140000" />
-      <workItem from="1656133255528" duration="16755000" />
+      <workItem from="1656133255528" duration="19388000" />
     </task>
     <servers />
   </component>
