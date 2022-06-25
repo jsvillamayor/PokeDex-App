@@ -1,7 +1,9 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import {pokemon} from "../pokemon/pokemon";
+import { PokemonService } from '../pokemon/pokemon.service';
 
 @Component({
   selector: 'app-create',
@@ -10,15 +12,25 @@ import {pokemon} from "../pokemon/pokemon";
 })
 export class CreateComponent implements OnInit {
 
-  public newPoke: pokemon=new pokemon();
+  newPoke: pokemon = new pokemon();
 
-  constructor(private http: HttpClient) { }
+  constructor(private pokemonService: PokemonService, private router: Router) { }
 
   ngOnInit(): void {
     console.log();
   }
-  create(){
+  
 
+  create(){
+    this.pokemonService.addPokemon(this.newPoke).subscribe(
+      (response: pokemon) => {
+        console.log(response);
+        this.router.navigate(['/list']);
+      },
+      (error: HttpErrorResponse) => {
+        alert(error.message);
+      }
+    )
   }
 
 }
