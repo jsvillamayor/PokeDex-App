@@ -1,3 +1,4 @@
+<body>
 <div class="box3">
 
   <input  #url class="input1" type="text" 
@@ -10,16 +11,10 @@
 <ul *ngIf="a">
   <div *ngFor="let o of a" class="box5">
 
-    <img class="image1" src="{{o.imageUrl}}" >
+    <img (click)="show(o)" class="image1" src="{{o.imageUrl}}" >
     <div class="box4">
       <label>  </label>{{o.name}}
-      <label>Pokédex No.:</label> {{o.pokedexNumber}}
-    </div>
-
-    <div class="box4">
-      <label>HP:</label>{{o.hp}}
-      <label>Attack:</label>{{o.attack}}
-      <label>Defend:</label>{{o.defend}}
+      <label class="right">No.</label> {{o.pokedexNumber}}
     </div>
   </div>
 </ul>
@@ -31,13 +26,9 @@
   <img (click)="show(o)" class="image1" src="{{o.imageUrl}}" >
   <div class="box4">
     <label>  </label>{{o.name}}
-    <label>Pokedéx No.:</label> {{o.pokedexNumber}}
-  </div>
-  <div class="box4">
-    <label>HP:</label>{{o.hp}}
-    <label>Attack:</label>{{o.attack}}
-    <label>Defend:</label>{{o.defend}}
+    <label class="right">No.</label> {{o.pokedexNumber}}
   </div>
 
 </div>
 <pagination-controls (pageChange)="p=$event"></pagination-controls>
+</body>
