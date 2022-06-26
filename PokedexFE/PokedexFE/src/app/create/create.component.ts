@@ -16,6 +16,7 @@ export class CreateComponent implements OnInit {
   constructor(private pokemonService: PokemonService, private router: Router) { }
 
   ngOnInit(): void {
+    
   }
   
 

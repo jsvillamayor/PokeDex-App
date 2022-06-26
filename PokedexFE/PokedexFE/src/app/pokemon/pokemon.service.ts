@@ -16,8 +16,9 @@ export class PokemonService {
     return this.http.post<pokemon>(`${this.apiServerUrl}/addPokemon`, Pokemon);
   }
 
-  public deletePokemon(Pokemon: String): Observable<void>{
-    return this.http.delete<void>(`${this.apiServerUrl}/delete/${Pokemon}`);
+  public deletePokemon(id: String): Observable<void>{
+    console.log(id);
+    return this.http.delete<void>(`${this.apiServerUrl}/delete/${id}`);
   }
 
 }

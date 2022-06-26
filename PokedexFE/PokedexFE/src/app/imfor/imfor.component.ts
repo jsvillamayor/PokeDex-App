@@ -1,5 +1,7 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import {Component, Inject, OnInit} from '@angular/core';
 import {MatDialogRef, MAT_DIALOG_DATA} from "@angular/material/dialog";
+import { Router } from '@angular/router';
 import { AuthenticationService } from '../login/auth.service';
 import {pokemon} from "../pokemon/pokemon";
 import {PokemonService} from "../pokemon/pokemon.service";
@@ -11,12 +13,21 @@ import {PokemonService} from "../pokemon/pokemon.service";
 })
 export class ImforComponent {
   constructor(private  dialogRef:  MatDialogRef<ImforComponent>, @Inject(MAT_DIALOG_DATA) public  data:  any
-    ,public authenticationService: AuthenticationService, private pokemonService:PokemonService ) {
+    ,public authenticationService: AuthenticationService, private pokemonService:PokemonService, private router: Router ) {
   }
   public  closeMe() {
     this.dialogRef.close();
   }
   delete (o:pokemon){
-      this.pokemonService.deletePokemon(o.id);
+      this.pokemonService.deletePokemon(o.id).subscribe(
+        (response: void) => {
+          this.router.navigate(['/list']);
+        },
+        (error: HttpErrorResponse) => {
+          alert(error.message);
+        });
+      this.dialogRef.close();
+      this.router.navigate(['/list']);
+      window.location.reload();
   }
 }
