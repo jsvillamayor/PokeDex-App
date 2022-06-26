@@ -14,6 +14,7 @@
   border-radius: 15px;
   border: 5px solid #73AD21;
   font-family: "Lucida Console";
+
 }
 
 .loginButton
@@ -49,4 +50,49 @@
   border-radius: 15px;
   border-color: white;
   color: purple;
+}
+
+
+
+
+
+
+
+
+.text-center{
+  font-family: "Lucida Console";
+  margin-top: 95px;
+  font-size: 50px;
+  margin-bottom: 50px;
+  color: orangered;
+  font-weight: bold;
+}
+
+.form-group{
+  background: none;
+}
+#createBtn
+{
+  background-color:lightskyblue;
+  height: 30px;
+  width: 200px;
+  border-radius: 15px;
+  color: green;
+  font-weight: bold;
+  border-color: orange;
+}
+
+#createBtn:hover
+{
+  background-color: purple;
+  border-radius: 15px;
+  border-color: white;
+  color:lightblue;
+}
+.form-control{
+  border-color: darkorange;
+  border-width: 5px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+
 }

@@ -1,6 +1,12 @@
 <div class="container col-lg-6">
+  <h1 class="text-center"></h1>
+
+  <div class="card-body">
+
+<!--
+<div class="container col-lg-6">
     <div class="card">
-        <div class="card-body">
+        <div class="card-body"> -->
             <form class="form-group">
                 <div class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div>
                 <div class="alert alert-success" *ngIf='loginSuccess'>{{successMessage}}</div>
@@ -16,6 +22,10 @@
                 <div>Don't have an account?</div>
                 <button (click)="create()" class = "createButton">Create an Account</button>
             </form>
+        <!--
         </div>
     </div>
+</div>
+  -->
+  </div>
 </div>
