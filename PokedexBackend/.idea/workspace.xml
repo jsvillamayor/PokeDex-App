@@ -7,7 +7,6 @@
     <list default="true" id="d318bc30-b244-41de-9dd9-523e416c602e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/basic-auth-interceptor.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/basic-auth-interceptor.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/imfor/imfor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/imfor/imfor.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/list/list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/list/list.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/list/list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/list/list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/menu/menu.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/menu/menu.component.css" afterDir="false" />
@@ -135,7 +134,7 @@
       <workItem from="1656026561397" duration="919000" />
       <workItem from="1656032860843" duration="3247000" />
       <workItem from="1656086411449" duration="2140000" />
-      <workItem from="1656133255528" duration="20025000" />
+      <workItem from="1656133255528" duration="20618000" />
     </task>
     <servers />
   </component>
