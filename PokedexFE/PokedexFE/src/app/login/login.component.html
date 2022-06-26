@@ -1,5 +1,4 @@
 <div class="container col-lg-6">
-    <h1 class="text-center">Login</h1>
     <div class="card">
         <div class="card-body">
             <form class="form-group">
@@ -13,9 +12,9 @@
                     <label for="pwd">Password: </label>
                     <input type="password" class="form-control" [(ngModel)]="password" id="password" placeholder="Enter Password" name="password">
                 </div>
-                <button (click)="handleLogin()" class="btn btn-success">Login</button>
+                <button class = "loginButton" (click)="handleLogin()" >Login</button>
                 <div>Don't have an account?</div>
-                <button (click)="create()" class="btn btn-secondary">Create an Account</button>
+                <button (click)="create()" class = "createButton">Create an Account</button>
             </form>
         </div>
     </div>

@@ -1,0 +1,52 @@
+.container{
+  font-family: "Lucida Console";
+  margin-top: 150px;
+  height: 500px;
+  width: 500px;
+
+}
+.form-group{
+  font-family: "Lucida Console";
+}
+
+.card{
+  margin-top: 110px;
+  border-radius: 15px;
+  border: 5px solid #73AD21;
+  font-family: "Lucida Console";
+}
+
+.loginButton
+{
+  background-color:yellow;
+  height: 30px;
+  width: 150px;
+  border-radius: 15px;
+  color: red;
+  font-weight: bold;
+}
+
+.loginButton:hover
+{
+  background-color: lightblue;
+  border-radius: 15px;
+  border-color: white;
+  color: purple;
+}
+.createButton
+{
+  background-color:yellow;
+  height: 30px;
+  width: 200px;
+  border-radius: 15px;
+  color: red;
+  font-weight: bold;
+}
+
+.createButton:hover
+{
+  background-color: lightblue;
+  border-radius: 15px;
+  border-color: white;
+  color: purple;
+}
