@@ -13,40 +13,40 @@ import {MatDialog} from "@angular/material/dialog";
 export class ListComponent implements OnInit {
 
   p :number=1;
-  public  poke1:pokemon[]=[];
+  public  dataHold:pokemon[]=[];
   public pokemons: pokemon[]=[];
   constructor(private http: HttpClient, private  dialog:  MatDialog) {
   }
   ngOnInit(): void {
     let resp= this.http.get("http://localhost:8080/getAllPokemon");
     resp.subscribe( (response: any)=>{
-      this.poke1=response;
+      this.dataHold=response;
       this.pokemons=response;
     })
   }
 
-  public show(o:pokemon){
+  public show(object:pokemon){
     this.dialog.open(ImforComponent,{ data: {
-        message:  o
+        message:  object
       }});
   }
 
   inputPokemon : String='';
-  a :pokemon[]=[];
+  searchResult :pokemon[]=[];
   inputPoke(url: String){
     this.clear();
-    this.a=[];
+    this.searchResult=[];
     this.inputPokemon=url;
     for(let i=0;i<this.pokemons.length;i++){
       if((this.pokemons[i].name).toLocaleLowerCase().includes((url).toLocaleLowerCase())) /*{this.p=this.pokemons[i];}*/
-        this.a.push((this.pokemons)[i]);
+        this.searchResult.push((this.pokemons)[i]);
     }
-    if(this.a!=[]) this.pokemons=[];
+    if(this.searchResult!=[]) this.pokemons=[];
   }
 
   public clear(){
-    this.a=[];
-    this.pokemons=this.poke1;
+    this.searchResult=[];
+    this.pokemons=this.dataHold;
   }
 
 

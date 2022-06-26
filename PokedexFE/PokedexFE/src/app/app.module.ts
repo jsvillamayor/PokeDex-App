@@ -22,6 +22,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule } from '@angular/material/dialog';
 import { ImforComponent } from './imfor/imfor.component';
 import { RouterModule } from '@angular/router';
+import {OrderModule} from "ngx-order-pipe";
 
 @NgModule({
   declarations: [
@@ -32,13 +33,14 @@ import { RouterModule } from '@angular/router';
     LogoutComponent,
     RegisterComponent,
     CreateComponent,
-    ImforComponent
+    ImforComponent,
   ],
   imports: [
     BrowserModule,AppRoutingModule,
     HttpClientModule,NgxPaginationModule,
     FormsModule,MatDialogModule, MatInputModule, MatButtonModule, MatCardModule, MatFormFieldModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    OrderModule
   ],
   providers: [UserService,
     { provide: HTTP_INTERCEPTORS,
