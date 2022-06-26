@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d318bc30-b244-41de-9dd9-523e416c602e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/imfor/imfor.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/imfor/imfor.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/imfor/imfor.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/imfor/imfor.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +131,7 @@
       <workItem from="1656086411449" duration="2140000" />
       <workItem from="1656133255528" duration="20618000" />
       <workItem from="1656212863694" duration="2502000" />
-      <workItem from="1656219597389" duration="2067000" />
+      <workItem from="1656219597389" duration="3257000" />
     </task>
     <servers />
   </component>
