@@ -16,13 +16,12 @@ export class ImforComponent {
   public  closeMe() {
     this.dialogRef.close();
   }
-  delete (o:pokemon){
-
-      this.pokemonService.deletePokemon(o.id);
 
 
-      console.log("hello");
-
-
+  delete(o:pokemon){
+    if(window.confirm('Are sure you want to delete this card ?')){
+      this.pokemonService.deletePokemon(o.id).subscribe();
+    }
   }
+
 }
