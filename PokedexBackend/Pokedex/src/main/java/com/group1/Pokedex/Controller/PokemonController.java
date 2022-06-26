@@ -42,7 +42,8 @@ public class PokemonController {
 	
 	@DeleteMapping("/delete/{id}")
     public ResponseEntity deletePokemon(@PathVariable String id) {
-        pokemonService.deletePokemon(id);
+		System.out.println("trying to delete");
+		pokemonService.deletePokemon(id);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 	
