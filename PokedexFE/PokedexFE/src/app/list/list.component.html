@@ -1,6 +1,8 @@
 
 <div class="box3">
+
 <div id ="searchInput">
+
   <input  #url class="input1" type="text"
           placeholder="Search Your Pokémon :" >
 </div>
@@ -13,8 +15,8 @@
 </div>
 
 
-<ul *ngIf="a">
-  <div *ngFor="let o of a" class="box5">
+<ul *ngIf="searchResult">
+  <div *ngFor="let o of searchResult" class="box5">
 
     <img (click)="show(o)" class="image1" src="{{o.imageUrl}}" >
     <div class="box4">
@@ -27,7 +29,12 @@
 </ul>
 
 
+<<<<<<< HEAD
 <div class="box5" *ngFor="let o of pokemons | paginate :{itemsPerPage: 4,currentPage:p}">
+=======
+<div class="box5" *ngFor="let o of pokemons | orderBy:'pokedexNumber'
+| paginate :{itemsPerPage:12,currentPage:p}">
+>>>>>>> 429002b8fcc858003331ad87037beed0254a9b18
 
 
   <img (click)="show(o)" class="image1" src="{{o.imageUrl}}" >

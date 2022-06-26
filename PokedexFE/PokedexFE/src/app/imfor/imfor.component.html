@@ -1,6 +1,11 @@
-<h1  mat-dialog-title>Pokémon Information</h1> <p>{{data.message.pokedexNumber}}<span> .</span>
-  {{data.message.name}}<span>   HP:</span>{{data.message.hp}}
-  <span>   Attack:</span>{{data.message.attack}}<span>   Defend:</span>{{data.message.defend}}</p>
+<h1  mat-dialog-title>Pokémon Information</h1>
+<p class="p1"><span class="span3">{{data.message.pokedexNumber}}</span>
+  <span class="span1"> . </span>
+  <span class="span3">{{data.message.name}} </span>
+  <span class="span2"> HP:{{data.message.hp}}</span>
+  <span class="span2"> Attack:{{data.message.attack}}</span>
+  <span class="span2"> Defend:{{data.message.defend}}</span>
+</p>
 <mat-dialog-content> <img
   class="image1" src="{{data.message.imageUrl}}"
   alt="Picture"></mat-dialog-content>

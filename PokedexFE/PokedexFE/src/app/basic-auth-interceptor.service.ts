@@ -15,7 +15,7 @@ import { AuthenticationService } from './login/auth.service';
   })
   export class BasicAuthInterceptorService implements HttpInterceptor {
     constructor(private authenticationService: AuthenticationService) {}
-  
+
     intercept(
       req: HttpRequest<any>,
       next: HttpHandler
@@ -27,6 +27,7 @@ import { AuthenticationService } from './login/auth.service';
                 'Authorization': `Basic ${this.authenticationService.getAuthToken()}`
             })
         });
+        console.log("hello3");
         return next.handle(authReq);
       } else {
         return next.handle(req);

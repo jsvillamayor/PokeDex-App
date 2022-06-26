@@ -17,6 +17,12 @@ export class ImforComponent {
     this.dialogRef.close();
   }
   delete (o:pokemon){
+
       this.pokemonService.deletePokemon(o.id);
+
+
+      console.log("hello");
+
+
   }
 }
