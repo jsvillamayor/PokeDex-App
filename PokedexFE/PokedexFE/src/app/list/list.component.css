@@ -23,59 +23,99 @@
   padding-right: 10px;
 }
 .box3{
-  margin-left: 300px;
-  margin-right: 600px;
-  margin-top:5px;
-  margin-bottom:10px;
-  border-color: lightslategray;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  margin-left: 800px;
+  font-family: "Lucida Console";
+  width: 1000px;
+
+}
+
+#searchbtn{
+  float: left;
+  margin-top: 10px;
+  font-family: "Lucida Console"
+
+}
+
+#searchInput{
+  float: left;
+  border-radius: 15px;
+  border: 5px solid #73AD21;
+}
+
+#clearbtn{
+  float: left;
+  margin-top: 10px;
+  font-family: "Lucida Console"
+}
+.btnChange{
+
+  background-color:lightskyblue;
+  height: 30px;
+  width: 200px;
+  border-radius: 15px;
+  color: green;
+  font-weight: bold;
+  border-color: orange;
+}
+
+.btnChange:hover
+{
+  background-color: purple;
+  border-radius: 15px;
+  border-color: white;
+  color:lightblue;
 }
 
 label{
   display: inline-block;
-  margin-left: 5px;
+
 }
 .right{
-  margin-left: 50%;
+
 }
 .image1{
   width: 280px;
   height: 300px;
   border: 3px solid;
-  border-color: black;
+  border-radius: 15px;
+  border-color: lightblue;
 }
 .image2{
   width: 100%;
 
 }
 
-.box4{
-  margin-left: 2px;
-  margin-right: 39px;
-  width: 280px;
+.box4 {
   border: 3px solid;
-  background-color: rgb(223, 102, 54);
-
-  border-color: lightslategray;
+  background-color: lightblue;
+  border-color: lightblue;
+  border-radius: 15px;
+  font-family: "Lucida Console";
 }
+
+  .numberBox{
+    float: left;
+    font-family: "Lucida Console";
+  }
+
 .box5{
-  width: 339px;
+  width: 300px;
   height: 339px;
   display: inline-block;
   margin-left: 10px;
-  margin-top:20px;
+  margin-top: 60px;
+
 
 }
-body{
+body {
   background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/26887395-78f4-441d-a6e0-cc877fa24b54/deejrt3-3c33eed3-d378-4f78-b8c6-fc6fa60575d9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI2ODg3Mzk1LTc4ZjQtNDQxZC1hNmUwLWNjODc3ZmEyNGI1NFwvZGVlanJ0My0zYzMzZWVkMy1kMzc4LTRmNzgtYjhjNi1mYzZmYTYwNTc1ZDkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.GLyG-NJ33bIHSVsd14MaodgIjhnEw-OvpmRtiyucEG0');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  overflow-x: scroll;
+
 }
+
+
 .box6{
   margin-left: 300px;
   margin-right: 400px;
@@ -107,6 +147,9 @@ button{
   border-radius: 5px;
   height: 39px;
   width: 250px;
+}
+#searchInput:hover {
+  background-color: yellow;
 }
 
 

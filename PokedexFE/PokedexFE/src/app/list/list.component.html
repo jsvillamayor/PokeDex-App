@@ -1,12 +1,17 @@
-<body>
+
 <div class="box3">
-
-  <input  #url class="input1" type="text" 
+<div id ="searchInput">
+  <input  #url class="input1" type="text"
           placeholder="Search Your Pokémon :" >
-  <button  mat-raised-button (click)="inputPoke(url.value)" >Search</button>
-  <button  mat-raised-button  (click)="clear()" >Clear</button>
-
 </div>
+  <div id ="searchbtn" >
+  <button mat-raised-button class = "btnChange" (click)="inputPoke(url.value)" >Search</button>
+  </div>
+  <div id ="clearbtn" >
+  <button  mat-raised-button class = "btnChange" (click)="clear()" >Clear</button>
+  </div>
+</div>
+
 
 <ul *ngIf="a">
   <div *ngFor="let o of a" class="box5">
@@ -14,21 +19,23 @@
     <img (click)="show(o)" class="image1" src="{{o.imageUrl}}" >
     <div class="box4">
       <label>  </label>{{o.name}}
+    </div >
+    <div class="numberBox">
       <label class="right">No.</label> {{o.pokedexNumber}}
     </div>
   </div>
 </ul>
 
 
-<div class="box5" *ngFor="let o of pokemons | paginate :{itemsPerPage:12,currentPage:p}">
+<div class="box5" *ngFor="let o of pokemons | paginate :{itemsPerPage: 4,currentPage:p}">
 
 
   <img (click)="show(o)" class="image1" src="{{o.imageUrl}}" >
   <div class="box4">
     <label>  </label>{{o.name}}
-    <label class="right">No.</label> {{o.pokedexNumber}}
+    <label >No.</label> {{o.pokedexNumber}}
   </div>
 
 </div>
 <pagination-controls (pageChange)="p=$event"></pagination-controls>
-</body>
+
