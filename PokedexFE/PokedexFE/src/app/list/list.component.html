@@ -3,11 +3,11 @@
 
 <div id ="searchInput">
 
-  <input  #url class="input1" type="text"
-          placeholder="Search Your Pokémon :" >
+  <input #target class="input1" type="text"
+         placeholder="Search Your Pokémon :" >
 </div>
   <div id ="searchbtn" >
-  <button mat-raised-button class = "btnChange" (click)="inputPoke(url.value)" >Search</button>
+  <button mat-raised-button class = "btnChange" (click)="inputPoke(target.value)" >Search</button>
   </div>
   <div id ="clearbtn" >
   <button  mat-raised-button class = "btnChange" (click)="clear()" >Clear</button>
@@ -29,13 +29,10 @@
 </ul>
 
 
-<<<<<<< HEAD
-<div class="box5" *ngFor="let o of pokemons | paginate :{itemsPerPage: 4,currentPage:p}">
-=======
-<div class="box5" *ngFor="let o of pokemons | orderBy:'pokedexNumber'
-| paginate :{itemsPerPage:12,currentPage:p}">
->>>>>>> 429002b8fcc858003331ad87037beed0254a9b18
 
+
+<div class="box5" *ngFor="let o of pokemons | orderBy:'pokedexNumber'
+| paginate :{itemsPerPage:4,currentPage:p}">
 
   <img (click)="show(o)" class="image1" src="{{o.imageUrl}}" >
   <div class="box4">

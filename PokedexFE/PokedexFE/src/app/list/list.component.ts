@@ -33,12 +33,12 @@ export class ListComponent implements OnInit {
 
   inputPokemon : String='';
   searchResult :pokemon[]=[];
-  inputPoke(url: String){
+  inputPoke(target: String){
     this.clear();
     this.searchResult=[];
-    this.inputPokemon=url;
+    this.inputPokemon=target;
     for(let i=0;i<this.pokemons.length;i++){
-      if((this.pokemons[i].name).toLocaleLowerCase().includes((url).toLocaleLowerCase())) /*{this.p=this.pokemons[i];}*/
+      if((this.pokemons[i].name).toLocaleLowerCase().includes((target).toLocaleLowerCase())) /*{this.p=this.pokemons[i];}*/
         this.searchResult.push((this.pokemons)[i]);
     }
     if(this.searchResult!=[]) this.pokemons=[];
