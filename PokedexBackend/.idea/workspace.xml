@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="80d9b71d-d7cf-4676-bef8-4756143e9661" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/login/login.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/list/list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/list/list.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +28,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
   </component>
@@ -58,7 +57,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/levan/OneDrive/Documents/PokeDexBE/newAppPokeDex/PokeDex-App/PokedexBackend",
+    "last_opened_file_path": "C:/Users/senhai/Documents/GitHub/PokeDex-App/PokedexBackend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -138,6 +137,7 @@
       <workItem from="1656264752890" duration="472000" />
       <workItem from="1656266554625" duration="7974000" />
       <workItem from="1656295339510" duration="599000" />
+      <workItem from="1656346165801" duration="1229000" />
     </task>
     <servers />
   </component>
