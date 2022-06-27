@@ -16,6 +16,12 @@
   font-family: "Lucida Console";
 
 }
+.textcolor{
+background-color: #FFB912;
+color: black;
+  font-weight: bold;
+  border-radius: 15px;
+}
 
 .loginButton
 {
