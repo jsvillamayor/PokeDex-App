@@ -21,9 +21,7 @@
     <img (click)="show(o)" class="image1" src="{{o.imageUrl}}" >
     <div class="box4">
       <label>  </label>{{o.name}}
-    </div >
-    <div class="numberBox">
-      <label class="right">No.</label> {{o.pokedexNumber}}
+      <label >No.</label> {{o.pokedexNumber}}
     </div>
   </div>
 </ul>
@@ -41,5 +39,6 @@
   </div>
 
 </div>
-<pagination-controls (pageChange)="p=$event"></pagination-controls>
+<div class="pagebackground">
+  <pagination-controls (pageChange)="p=$event"></pagination-controls></div>
 

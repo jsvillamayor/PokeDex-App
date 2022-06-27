@@ -66,6 +66,13 @@
   color:lightblue;
 }
 
+.pagebackground{
+  height: 30px;
+width: 430px;
+  background-color: white;
+  border-radius: 15px;
+}
+
 label{
   display: inline-block;
 
@@ -91,6 +98,7 @@ label{
   border-color: lightblue;
   border-radius: 15px;
   font-family: "Lucida Console";
+  height: 35px;
 }
 
   .numberBox{
