@@ -1,0 +1,41 @@
+SENHAI:
+Scenario: UnregistedUser should not able to login
+    Given  unregisted username and password 
+    When I click the login button
+    Then I should be denied with a message
+
+Scenario: UnregistedUser should able to see all cards
+    Given unregisted user directed to localhost/list
+    When I click an card
+    Then I should see card information
+
+Scenario: RegistedUser should able to delete any selected card
+    Given Registed user after login directed to localhost/list
+    When I click an card
+    Then I should able to delete that card by clicking the delete button
+
+Scenario: UngistedUser should able to search
+    Given Unegisted user directed to localhost/list
+    When I click an search button with searching imformation
+    Then I should able see the result
+
+JAMES:
+Scenario: User tries to go to create page directly
+	Given User is not logged in
+	When I attempt to go to create page
+	Then I should be redirected to list page
+
+Scenario: User Credentials are good
+	Given User credentials are valid
+	When I click the login button
+	Then I should be redirected to list page
+
+Scenario: Logged In user should not be able to register
+	Given User is logged in
+	When I try to go to register page
+	Then I should be redirected to list page or given a message saying 'I'm already logged in'
+
+Scenario: Registering with no password
+	Given Registering an account with no password
+	When I click the register button
+	Then I should be prompted with an error saying 'Password is a required field'
