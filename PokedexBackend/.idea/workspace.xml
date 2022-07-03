@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/app.component.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/basic-auth-interceptor.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/basic-auth-interceptor.service.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/create/create.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/create/create.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/imfor/imfor.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/imfor/imfor.component.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/list/list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/list/list.component.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/login/auth.service.spec.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/login/login.component.spec.ts" afterDir="false" />
@@ -151,7 +152,7 @@
       <workItem from="1656432588593" duration="11023000" />
       <workItem from="1656612360851" duration="3182000" />
       <workItem from="1656628324148" duration="3789000" />
-      <workItem from="1656780682283" duration="4810000" />
+      <workItem from="1656780682283" duration="5485000" />
     </task>
     <servers />
   </component>
