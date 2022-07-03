@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80d9b71d-d7cf-4676-bef8-4756143e9661" name="Changes" comment="" />
+    <list default="true" id="80d9b71d-d7cf-4676-bef8-4756143e9661" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/basic-auth-interceptor.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/basic-auth-interceptor.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/create/create.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/create/create.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/list/list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/list/list.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/login/auth.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/login/login.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/menu/menu.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/menu/menu.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/pokemon/pokemon.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/pokemon/pokemon.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/register/register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/register/register.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/user/user.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../PokedexFE/PokedexFE/src/app/user/user.service.spec.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +66,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/senhai/Documents/GitHub/PokeDex-App/PokedexBackend",
+    "last_opened_file_path": "C:/Users/senhai/Documents/GitHub/PokeDex-App/PokedexFE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -134,7 +146,12 @@
       <workItem from="1656264752890" duration="472000" />
       <workItem from="1656266554625" duration="7974000" />
       <workItem from="1656295339510" duration="599000" />
-      <workItem from="1656346165801" duration="1901000" />
+      <workItem from="1656346165801" duration="2614000" />
+      <workItem from="1656360483004" duration="2447000" />
+      <workItem from="1656432588593" duration="11023000" />
+      <workItem from="1656612360851" duration="3182000" />
+      <workItem from="1656628324148" duration="3789000" />
+      <workItem from="1656780682283" duration="4810000" />
     </task>
     <servers />
   </component>

@@ -23,13 +23,13 @@ describe('AppComponent', () => {
   it(`should have as title 'helloworld-example-tutorial'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('helloworld-example-tutorial');
+    expect(app.title).toEqual('frontend-spring-boot-angular-hello-world-example');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('helloworld-example-tutorial app is running!');
+    expect(compiled.querySelector('title')?.textContent).toContain('Change_me');
   });
 });
