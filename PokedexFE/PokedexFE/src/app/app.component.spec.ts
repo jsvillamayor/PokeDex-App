@@ -20,10 +20,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'helloworld-example-tutorial'`, () => {
+  it(`should have as title 'rontend-spring-boot-angular-PokeDex'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('frontend-spring-boot-angular-hello-world-example');
+    expect(app.title).toEqual('frontend-spring-boot-angular-PokeDex');
   });
 
   it('should render title', () => {

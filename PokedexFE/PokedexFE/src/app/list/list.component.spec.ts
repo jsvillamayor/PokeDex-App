@@ -37,5 +37,19 @@ describe('ListComponent', () => {
       elemnet.click();
       expect(clearSpyon).toHaveBeenCalledTimes(1);
     })
+
   })
+
+  it('search button works',()=>{
+    fixture.detectChanges();
+    fixture.whenStable().then(() => {
+      const elemnet: HTMLInputElement=fixture.debugElement.nativeElement.querySelector('searchbtn');
+      const clearSpyon=spyOn(component,'SearchPoke').and.callThrough();
+      elemnet.click();
+      expect(clearSpyon).toHaveBeenCalledTimes(1);
+    })
+
+  })
+
+
 });
